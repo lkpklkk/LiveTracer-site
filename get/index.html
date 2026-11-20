@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get LiveTracer</title>
+<meta name="description" content="LiveTracer draws your golf shot’s flight as you film it on iPhone. Free, no account.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#EEF2F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1F2F2A" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../assets/site.css">
+<script>
+  // Where links and QR codes to /get/ lead. Empty: show this page ("coming soon").
+  // Set it to the App Store link at launch (or a TestFlight link before), e.g.
+  // "https://apps.apple.com/app/id0000000000?pt=PROVIDER&ct=badge".
+  // Query parameters on this page's URL (for example ?ct=badge) are passed through.
+  var TARGET = "";
+  if (TARGET) {
+    var target = new URL(TARGET);
+    new URLSearchParams(location.search).forEach(function (value, key) {
+      if (!target.searchParams.has(key)) target.searchParams.set(key, value);
+    });
+    location.replace(target.toString());
+  }
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+  <header class="banner">
+    <a class="brand brand-text" href="../">LiveTracer</a>
+  </header>
+
+  <main id="main">
+    <h1 class="title">Real-time shot tracer.</h1>
+    <p class="lede">Recording a high-quality tracer has never been easier.</p>
+    <p><span class="badge">Free, no account</span></p>
+
+    <section aria-labelledby="soon-heading">
+      <h2 class="visually-hidden" id="soon-heading">Availability</h2>
+      <div class="group">
+        <div class="hero">
+          <div>
+            <h3>Coming soon to the App Store</h3>
+            <p>Point your iPhone at the ball and LiveTracer draws the shot’s flight as you film.</p>
+          </div>
+        </div>
+        <div class="actions"><a class="button" href="mailto:keplee99@gmail.com?subject=Tell%20me%20when%20LiveTracer%20launches">Tell me when it’s out</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>LiveTracer · Free, no account</span>
+    <nav aria-label="Footer"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav>
+  </footer>
+</div>
+</body>
+</html>
